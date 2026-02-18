@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echo-stable
+  namespace: default
+  labels:
+    app: echo-stable
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: echo-stable
+  template:
+    metadata:
+      labels:
+        app: echo-stable
+    spec:
+      containers:
+      - name: http-echo
+        image: hashicorp/http-echo:0.2.3
+        args:
+        - "-text=Hello from STABLE!"
+        ports:
+        - containerPort: 5678
+        resources:
+          requests:
+            cpu: 5m
+            memory: 16Mi
+          limits:
+            cpu: 100m
+            memory: 64Mi
+
+
