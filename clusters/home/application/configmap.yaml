@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  DB: '"host=localhost user=admin password=1234 dbname=mydb port=5432 sslmode=disable"'
+  TABLE_NAME: PriceAlerts
+  JWT_SECRET: vn7IaAMdEsy6IrWowloqnCzLU3Up4hRlJ9WTinBy18E9z/jpaSbmVFLjX8zDMLvAUP6IlPsompcC05xaOGWTYQ==
+  SNS_TOPIC_ARN: arn:aws:sns:us-east-1:262554599984:PricesNotification
+  SQS_QUEUE_URL: https://sqs.us-east-1.amazonaws.com/262554599984/microservices-queue
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: microservices-config
