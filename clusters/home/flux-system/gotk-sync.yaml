@@ -8,10 +8,10 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: main
+    branch: master
   secretRef:
     name: flux-system
-  url: ssh://git@github.com/azuar4e/flux-repo
+  url: ssh://git@github.com/azuar4e/flux-repo-tfg
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
