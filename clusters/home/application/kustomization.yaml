@@ -1,9 +1,13 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ing-canary.yaml
-- ing-stable.yaml
+- api-ingress.yaml
 - hpa.yaml
 - scraper-deployment.yaml
 - api-deployment.yaml
 - configmap.yaml
+- scraper-image-repo.yaml
+- scraper-image-policy.yaml
+- image-update.yaml
+- api-image-repo.yaml
+- api-image-policy.yaml

@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: api-gateway-tfg
+  namespace: flux-system
+spec:
+  image: ghcr.io/azuar4e/api-gateway-tfg
+  interval: 1m

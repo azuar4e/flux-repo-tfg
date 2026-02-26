@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: scraper-tfg
+  namespace: flux-system
+spec:
+  image: ghcr.io/azuar4e/scraper-tfg
+  interval: 1m

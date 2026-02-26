@@ -3,23 +3,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: api-gateway
-  name: api-gateway
+    app: scraper
+  name: scraper
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: api-gateway
+      app: scraper
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: api-gateway
+        app: scraper
     spec:
       containers:
-      - image: ghcr.io/azuar4e/scraper-tfg:latest
+      - image: ghcr.io/azuar4e/scraper-tfg:latest # {"$imagepolicy": "flux-system:scraper-tfg"}
         name: scraper-tfg
-        imagePullPolicy: IfNotPresent
-      envFrom:
-      - configMapRef:
-          name: microservices-config
+        imagePullPolicy: Always
+        envFrom:
+        - configMapRef:
+            name: microservices-config

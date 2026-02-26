@@ -1,4 +1,3 @@
----
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
@@ -23,4 +22,5 @@ spec:
         enabled: false
       replicaCount: 1
       service:
-        type: NodePort
+        type: LoadBalancer
+Transform: AWS::Serverless-2016-10-31
