@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: api-gateway
   name: api-gateway
@@ -13,7 +12,6 @@ spec:
       app: api-gateway
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: api-gateway
     spec:

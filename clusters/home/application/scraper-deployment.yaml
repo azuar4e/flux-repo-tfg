@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: scraper
   name: scraper
@@ -13,7 +12,6 @@ spec:
       app: scraper
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: scraper
     spec:
