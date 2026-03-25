@@ -1,8 +1,7 @@
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  creationTimestamp: null
-  name: echo-stable
+  name: api-stable
   namespace: default
 spec:
   maxReplicas: 10
@@ -10,7 +9,7 @@ spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: echo-stable
+    name: api-gateway
   targetCPUUtilizationPercentage: 50
 status:
   currentReplicas: 0
