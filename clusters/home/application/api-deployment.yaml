@@ -23,4 +23,3 @@ spec:
         envFrom:
         - configMapRef:
             name: microservices-config
-
