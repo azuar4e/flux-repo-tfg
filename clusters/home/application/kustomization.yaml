@@ -11,3 +11,4 @@ resources:
 - image-update.yaml
 - api-image-repo.yaml
 - api-image-policy.yaml
+- api-svc.yaml
