@@ -22,3 +22,5 @@ spec:
         envFrom:
         - configMapRef:
             name: microservices-config
+        - secretRef:
+            name: aws-creds
