@@ -7,10 +7,10 @@ metadata:
   namespace: default
 spec:
   ports:
-  - name: 80-8080
+  - name: APIg
     port: 80
     protocol: TCP
-    targetPort: 8080
+    targetPort: 9090
   selector:
     app: api-gateway
   type: ClusterIP

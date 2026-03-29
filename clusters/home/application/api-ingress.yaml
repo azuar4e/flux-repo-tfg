@@ -12,8 +12,6 @@ spec:
           service:
             name: api-svc
             port:
-              number: 8080
+              number: 80
         path: /
         pathType: Prefix
-status:
-  loadBalancer: {}
