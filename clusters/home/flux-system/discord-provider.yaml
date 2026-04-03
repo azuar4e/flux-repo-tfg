@@ -4,6 +4,8 @@ kind: Provider
 metadata:
   name: discord
   namespace: flux-system
+  annotations:
+    reconcile.fluxcd.io/requestedAt: "1"
 spec:
   channel: flux-notifications
   secretRef:
