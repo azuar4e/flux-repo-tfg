@@ -24,3 +24,5 @@ spec:
             name: microservices-config
         - secretRef:
             name: aws-creds
+        - secretRef:
+            name: db-credentials
