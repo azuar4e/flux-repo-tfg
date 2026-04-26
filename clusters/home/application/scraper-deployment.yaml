@@ -16,7 +16,7 @@ spec:
         app: scraper
     spec:
       containers:
-      - image: ghcr.io/azuar4e/scraper-tfg:23 # {"$imagepolicy": "flux-system:scraper-tfg"}
+      - image: ghcr.io/azuar4e/scraper-tfg:25 # {"$imagepolicy": "flux-system:scraper-tfg"}
         name: scraper-tfg
         imagePullPolicy: Always
         envFrom:
