@@ -19,6 +19,13 @@ spec:
       - image: ghcr.io/azuar4e/api-gateway-tfg:15 # {"$imagepolicy": "flux-system:api-gateway-tfg"}
         name: api-gateway-tfg
         imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: "50m"
+            memory: "32Mi"
+          limits:
+            cpu: "200m"
+            memory: "128Mi"
         envFrom:
         - configMapRef:
             name: microservices-config

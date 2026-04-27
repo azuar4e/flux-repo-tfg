@@ -19,6 +19,13 @@ spec:
       - image: ghcr.io/azuar4e/scraper-tfg:25 # {"$imagepolicy": "flux-system:scraper-tfg"}
         name: scraper-tfg
         imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: "300m"
+            memory: "256Mi"
+          limits:
+            cpu: "900m"
+            memory: "512Mi"
         envFrom:
         - configMapRef:
             name: microservices-config
