@@ -4,7 +4,7 @@
 
 This repository contains the FluxCD configuration applied to my EKS and local clusters for my bachelor's thesis.
 
-The complete explanation of the project can be found at my [TFG](https://github.com/azuar4e/tfg) repository.
+The complete explanation of the project can be found in my [TFG](https://azuar4e.github.io/en/posts/tfg) article on my blog.
 
 ## Overview
 
